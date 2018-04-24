@@ -143,6 +143,7 @@
         };
 
         firebase.initializeApp(config);
+        var db = firebase.firestore();
         var globalUser = JSON.parse(localStorage.getItem('user'));
         var globalToken = localStorage.getItem('token');
 
