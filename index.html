@@ -19,6 +19,14 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            
+            <a href="#" class="navbar-brand">Обработка заявок</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+    </nav>
     <div class="container">
         <!-- 
             <form class="form-horizontal" id="myForm">
@@ -118,7 +126,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                 </tbody>
             </table>
             <div class="col-sm-9 col-sm-offset-3">
@@ -188,14 +196,14 @@
                     console.log(doc);
                     var data = doc.data();
                     var tr = "<tr>\
-                    <td>"+doc.id+"</td>\
-                    <td>"+data.firs_name+"</td>\
-                    <td>"+doc.data().gender+"</td>\
-                    <td>"+doc.data().email+"</td>\
-                    <td>"+doc.data().place+"</td>\
-                    <td>"+doc.data().detail+"</td>\
-                    <td>"+doc.data().date+"</td>\
-                    <td>"+doc.data().accept+"</td>\
+                    <td>"+ doc.id + "</td>\
+                    <td>"+ data.firs_name + "</td>\
+                    <td>"+ doc.data().gender + "</td>\
+                    <td>"+ doc.data().email + "</td>\
+                    <td>"+ doc.data().place + "</td>\
+                    <td>"+ doc.data().detail + "</td>\
+                    <td>"+ doc.data().date + "</td>\
+                    <td>"+ doc.data().accept + "</td>\
                     </tr>";
 
                     $('#table tbody').append(tr);
